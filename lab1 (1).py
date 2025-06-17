@@ -36,7 +36,6 @@ class Onl_Maksim(Maksim):
         return basic_info + platform_info + location_info
 
 
-# Створення об'єктів
 Student1 = Maksim("Діма", "Поліщук", 2008)
 Student2 = Maksim("Дімон", None, 2000)
 Student3 = Maksim("Дмитро", "Клепак", 2007, 2)
@@ -44,11 +43,9 @@ Student3 = Maksim("Дмитро", "Клепак", 2007, 2)
 Student4 = Onl_Maksim("Діма", "Панчук", 2005, 3, "Zoom", False, "ПК")
 Student5 = Onl_Maksim("Дімон", "Поліщук", 2008, 3, "Google Meet", True, "Ноутбук")
 
-# Список студентів
 Students = [Student1, Student2, Student3, Student4, Student5]
 Names_list = Maksim.get_names_list(Students)
 
-# Виведення результатів
 print("Список імен:")
 print(Names_list)
 print()
